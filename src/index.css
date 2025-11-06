@@ -1,0 +1,33 @@
+/* Tailwind base */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: smooth fonts */
+html, body, #root {
+  height: 100%;
+  /* Tailwind equivalent: overscroll-none */
+  overscroll-behavior: none;              /* Chrome/Edge/Firefox */
+  background-color: #0b1222;              /* dark navy to match header/night */
+  color: #e5e7eb;                          /* slate-200 */
+}
+
+@layer base {
+  html, body, #root { @apply h-full overscroll-none bg-slate-950 text-slate-100; }
+}
+
+/* iOS Safari friendliness */
+body {
+  -webkit-overflow-scrolling: auto;        /* avoid momentum bounce */
+  touch-action: manipulation;
+}
+
+/* crisp pixel look for sprites/gifs */
+.image-render-pixel {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: pixelated;
+}
+
+/* simple scrollbars (optional) */
+::-webkit-scrollbar { height: 8px; width: 8px; }
+::-webkit-scrollbar-thumb { background: rgba(100,116,139,.4); border-radius: 8px; }
