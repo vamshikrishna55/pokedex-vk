@@ -10,7 +10,7 @@ A clean, fast Pokedex with day/night UI, grouped type filters, base-form browsin
 
 ## 🔗 Live Demo
 
-**URL:** [https://your-vercel-domain.vercel.app](https://pokedex-vk.vercel.app/)  
+**URL:** [[https://pokedex-vk.vercel.app/](https://pokedex-vk.vercel.app/)  
 **Video/GIF Preview:**
 
 > Replace the file below with your own capture (see “How to add images/GIFs”).
